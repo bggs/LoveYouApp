@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_accounce"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:scaleType="fitXY"
+        android:src="@mipmap/iv_loveupmar" />
+
+    <TextView
+        android:id="@+id/itemup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@+id/iv_accounce"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_13"
+        tools:text="动态" />
+
+    <TextView
+        android:id="@+id/itemup_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_13"
+        tools:text="动态" />
+</RelativeLayout>

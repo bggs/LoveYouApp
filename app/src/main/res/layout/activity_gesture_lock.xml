@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ll_title"
+        layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/text_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:text="请您设置手势密码!"
+        android:textColor="@color/color666666"
+        android:textSize="@dimen/sp_20" />
+
+    <LinearLayout
+        android:id="@+id/linear_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_msg"
+        android:gravity="center">
+
+        <com.github.ihsg.patternlocker.PatternIndicatorView
+            android:id="@+id/pattern_indicator_view"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_20" />
+    </LinearLayout>
+
+    <com.github.ihsg.patternlocker.PatternLockerView
+        android:id="@+id/pattern_lock_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_indicator"
+        android:layout_margin="@dimen/dp_20" />
+
+    <TextView
+        android:id="@+id/tv_forgetGesturePwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pattern_lock_view"
+        android:layout_centerHorizontal="true"
+        android:text="忘记手势密码?"
+        android:textColor="@color/colorFBD786"
+        android:textSize="@dimen/sp_20" />
+</RelativeLayout>

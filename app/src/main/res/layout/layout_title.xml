@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_44"
+    android:background="@color/colorFF9266">
+
+    <ImageView
+        android:id="@+id/iv_return"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:padding="@dimen/dp_10"
+        android:scaleType="fitXY"
+        android:src="@mipmap/iv_return"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="小恩爱"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+</LinearLayout>

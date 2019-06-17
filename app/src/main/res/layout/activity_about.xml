@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_80"
+        android:gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@mipmap/a" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center_horizontal"
+        android:text="我们的故事"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/sp_24" />
+
+    <TextView
+        android:id="@+id/about_my_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="center_horizontal"
+        android:text="版本号 V333"
+        android:textColor="@color/color666666" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginRight="@dimen/dp_20"
+        android:lineSpacingExtra="5dp"
+        android:text="\t\t人与人相交，最温暖的境界，莫过于一句“懂得”。红尘中，我们会相遇一些人，一些事，跌跌撞撞里，逐渐懂得了这世界，懂得如何经营自己的内心，使它柔韧，更适应这风雨征途，而不会在过往的错失里纠结懊悔一生。懂得，是两颗心的对望，潜生一种心灵感应，不发一言，便可知会。一声懂得，没有千言万语，却可以令人眸中含泪，心中蕴暖。这世间太多人情薄凉，你是否觉得，有一个真正懂你的人，是一种幸福与慰藉呢？茫茫人海，你不孤单，有人愿与你同运命，共风雨，如此，多好！懂得，真好！"
+        android:textColor="@color/color333333"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/ll_title"
+        layout="@layout/layout_title" />
+
+    <ImageView
+        android:id="@+id/iv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_320"
+        android:layout_below="@+id/ll_title"
+        android:layout_marginTop="@dimen/dp_40"
+        android:contentDescription="手势"
+        android:src="@mipmap/iv_phone_lock" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_phone"
+        android:layout_margin="@dimen/dp_20"
+        android:lineSpacingExtra="@dimen/sp_10"
+        android:text="      您可以创建一个解锁图案,这样他人在借用您的手机时,将无法打开此应用程序。"
+        android:textColor="@color/color666666"
+        android:textSize="@dimen/sp_16" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv">
+
+        <TextView
+            android:id="@+id/tv_setup"
+            android:layout_width="@dimen/dp_160"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:background="@drawable/btn_guide_selector"
+            android:gravity="center"
+            android:text="创建手势密码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+    </RelativeLayout>
+</RelativeLayout>

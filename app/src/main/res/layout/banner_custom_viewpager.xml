@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/bannerContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <!--展示图片的view-->
+    <com.liujie.loveyouapp.mvp.view.CustomViewPager
+        android:id="@id/bannerViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false" />
+    <!--展示指示器的view-->
+    <LinearLayout
+        android:id="@id/circleIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10" />
+    <!--下面的可以不操作 不用管-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/numIndicator"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_8"
+            android:background="@drawable/black_background"
+            android:gravity="center"
+            android:text="1/1"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@+id/circleIndicator"
+            android:background="#44000000"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@id/bannerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1000"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@id/numIndicatorInside"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="1/1"
+                    android:textColor="#ffffff" />
+
+                <LinearLayout
+                    android:id="@id/indicatorInside"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bannerDefaultImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+</RelativeLayout>

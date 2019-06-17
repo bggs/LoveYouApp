@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs_rg" />
+
+    <RadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colore5e5e5"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dp_3">
+
+        <RadioButton
+            android:id="@+id/tab_love"
+            style="@style/Custom.TabRadioButton"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_love_selector"
+            android:text="小恩爱" />
+
+        <RadioButton
+            android:id="@+id/tab_dynamic"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/tab_dynamic_selector"
+            android:text="动态" />
+
+        <View style="@style/Custom.TabRadioButton" />
+
+        <RadioButton
+            android:id="@+id/tab_secret"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/tab_secret_selector"
+            android:text="密友" />
+
+        <RadioButton
+            android:id="@+id/tab_my"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/tab_my_selector"
+            android:text="我的" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/sign_iv"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/add_card" />
+</RelativeLayout>

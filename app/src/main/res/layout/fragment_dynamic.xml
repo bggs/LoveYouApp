@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luolc.emojirain.EmojiRainLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/group_emoji_container"
+    android:background="@color/colorFBD786">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/ll_title"
+            layout="@layout/layout_title" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</com.luolc.emojirain.EmojiRainLayout>
