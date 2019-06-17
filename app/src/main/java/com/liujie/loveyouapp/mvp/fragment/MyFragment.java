@@ -105,8 +105,6 @@ public class MyFragment extends BaseFragment<MyPresenter> implements MyContract.
         }
         tv_cacheClean.setText(totalCacheSize);
     }
-//    在这个特别的日子里，我没有别的话，只想你知道，每年今天，你都会收到我的祝福，感到我的爱，永远的爱!
-//    天天都在你身边，不用苦苦地想你，也不必酸酸地恋你，只需甜甜地爱着你！
 
     @Override
     protected MyPresenter createPresenter() {
